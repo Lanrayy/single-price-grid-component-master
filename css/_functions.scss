@@ -1,0 +1,13 @@
+@function weight($font-name) {
+    @return map-get($font-weight, $font-name)
+}
+
+@function color($color-name) {
+    @return map-get($colors, $color-name)
+}
+
+// @function flexCenter() {
+//     @return (
+//         "display: flex;"
+//     )
+// }

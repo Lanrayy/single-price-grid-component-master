@@ -1,0 +1,23 @@
+// Font Weights
+$font-weight: (
+    regular: 400,
+    bold: 700
+);
+
+// Colours
+
+$colors: (
+    cyan: hsl(179, 62%, 43%), // Cyan
+    yellow: hsl(71, 73%, 54%), //Bright Yellow
+    gray: hsl(204, 43%, 93%), // Light Gray
+    grayish-blue: hsl(218, 22%, 67%), // Grayish Blue
+);
+
+
+// Font 
+$karla: Karla, sans-serif; // Karla Font
+
+// Dimensions
+
+$mobile-width: 375px;
+$desktop-width: 1440px;
