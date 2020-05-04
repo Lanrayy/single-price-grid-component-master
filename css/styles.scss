@@ -108,7 +108,9 @@ body {
         font-size: 16px;
         font-weight: weight(bold);
 
+        border:0;
         box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.281);
+
     }
 
     button:hover {
@@ -147,100 +149,137 @@ body {
 
 
 @media only screen and (min-width: 375px){
-   
 
-    .column {
-        // border: 1px solid blue;
-        height: 400px;
-    }
-    .column1 {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color:color(gray);
         width: 1440px;
+        height: 800px;
+        flex-direction: column;
+    }
+   .page-container{
+    //    border: 2px solid color(grayish-blue);
+    box-shadow: 0px 0px 10px 1px color(grayish-blue);
+       width: 630px;
+       height: 475px;
+   }
+
+    .column1 {
+        background-color: white;
+        // @include outline(black);
+        width: auto;
         height: auto;
 
         .column1-container {
-            margin: 80px 80px;
+        margin: 38px;
+        // @include outline(red);
         }
 
         .heading {
-            font-size: 55px;
-            margin-bottom: 50px;
+            font-size: 24px;
+            margin-bottom: 0px;
         }
 
         .subheading {
-            font-size: 40px;
-            margin-bottom: 50px;
+            font-size: 18px;
+            margin-bottom: 0px;
+            margin-top:20px;
         }
         .item:nth-child(3) {
-            font-size: 35px;
+            font-size: 16px;
+            margin-top: 15px;
+            margin-bottom: 0;
         }
     }
+
     .bottom-column {
         display: flex;
-        width: 1440px;
-    }
-    .column2 {
-        width: 50%;
+        width: 630px;
+        flex-direction: row;
         height: auto;
+        // @include outline(blue);
 
-        .column2-container {
-            margin: 70px 80px;
-            // border: 1px solid black;
-        }
 
-        .heading{
-            font-size: 40px;
-            margin-bottom: 40px;
-        }
-        .price-container {
-            margin-bottom: 20px;
-        }
-        .price {
-            font-size: 50px;
-        }
+        .column2 {
+            width: 50%;
+            height: 258px;
+    
+            .column2-container {
+                // @include outline(black);
+                margin: 30px ;
+            }
+    
+            .heading{
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+            .price-container {
+                margin-bottom: 10px;
+                // @include outline(purple);
+            }
+            .price {
+                font-size: 30px;
+                margin-right: 10px;
 
-        #per-month {
-            font-size: 30px;
+            }
+    
+            #per-month {
+                font-size: 16px;
+            }
+    
+            .subheading {
+                font-size: 16px;
+                margin-bottom: 30px;;
+            }
+    
+            button {
+                height: 50px;
+                width: 100%;
+                border-radius: 5px;
+    
+                font-size: 16px;
+                font-weight: weight(regular);
+            }
+    
+            button:hover {
+                cursor: pointer;
+            }
         }
+    
+        .column3{
+            width: 50%;
+            height: 258px;
+        //    @include outline(pink);
+    
+            .column3-container {
+                padding:0;
+                // @include outline(black);
+            }
+    
+            .heading {
+                font-size: 18px;
+            }
+    
+            .text {
+                font-weight: weight(regular);
+                color: rgba(255, 255, 255, 0.637);
+                font-size: 15px;
+                line-height: 1;
+                // @include outline(black);
 
-        .subheading {
-            font-size: 30px;
-            margin-bottom: 70px;;
-        }
-
-        button {
-            height: 90px;
-            width: 90%;
-            border-radius: 10px;
-
-            font-size: 28px;
-            font-weight: weight(regular);
-        }
-
-        button:hover {
-            cursor: pointer;
+                p{
+                    margin-bottom: 7px;
+                }
+            }
         }
     }
-
-    .column3{
-        width: 50%;
-        height: auto;
-
-        .column3-container {
-            margin: 70px 80px;
-        }
-
-        .heading {
-            font-size: 40px;
-        }
-
-        .text {
-            font-size: 25px;
-            line-height: 1.6;
-        }
-    }
-    .page-container {.attribution {
-        font-size: 22px;
-    }
+        
+        .attribution {
+        margin-top: 10px;
+        font-size: 13px;
 }
 }
+
 
