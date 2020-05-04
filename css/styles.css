@@ -24,6 +24,12 @@ body {
           align-items: center;
 }
 
+.page-container .attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 15px;
+}
+
 .column {
   width: 375px;
   height: 300px;
@@ -105,7 +111,7 @@ body {
 
 .column2 .price {
   font-size: 35px;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .column2 #per-month {
@@ -161,5 +167,90 @@ body {
 .column3 .text {
   color: #e5eff5;
   line-height: 1.5;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media only screen and (min-width: 375px) {
+  .column {
+    height: 400px;
+  }
+  .column1 {
+    width: 1440px;
+    height: auto;
+  }
+  .column1 .column1-container {
+    margin: 80px 80px;
+  }
+  .column1 .heading {
+    font-size: 55px;
+    margin-bottom: 50px;
+  }
+  .column1 .subheading {
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+  .column1 .item:nth-child(3) {
+    font-size: 35px;
+  }
+  .bottom-column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1440px;
+  }
+  .column2 {
+    width: 50%;
+    height: auto;
+  }
+  .column2 .column2-container {
+    margin: 70px 80px;
+  }
+  .column2 .heading {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  .column2 .price-container {
+    margin-bottom: 20px;
+  }
+  .column2 .price {
+    font-size: 50px;
+  }
+  .column2 #per-month {
+    font-size: 30px;
+  }
+  .column2 .subheading {
+    font-size: 30px;
+    margin-bottom: 70px;
+  }
+  .column2 button {
+    height: 90px;
+    width: 90%;
+    border-radius: 10px;
+    font-size: 28px;
+    font-weight: 400;
+  }
+  .column2 button:hover {
+    cursor: pointer;
+  }
+  .column3 {
+    width: 50%;
+    height: auto;
+  }
+  .column3 .column3-container {
+    margin: 70px 80px;
+  }
+  .column3 .heading {
+    font-size: 40px;
+  }
+  .column3 .text {
+    font-size: 25px;
+    line-height: 1.6;
+  }
+  .page-container .attribution {
+    font-size: 22px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
